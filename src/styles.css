@@ -2,4 +2,27 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    font-size: 55px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 23px;
+    color: white;
+    background-color: black;
 }
