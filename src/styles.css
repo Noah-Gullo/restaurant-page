@@ -7,6 +7,12 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
 }
 
+body{
+    background: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 :root{
     --bg-color: darkgreen;
     --btn-hover: rgb(0, 45, 0);
