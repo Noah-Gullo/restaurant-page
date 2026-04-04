@@ -2,15 +2,31 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    color: darkgreen;
+    border: 0px;
+    color: var(--bg-color);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
 }
 
-h1{
-    display: flex;
-    justify-content: center;
+:root{
+    --bg-color: darkgreen;
+    --btn-hover: rgb(0, 45, 0);
+    --btn-down: rgb(0, 75, 0);
+}
 
+#homeContent, 
+#menuContent, 
+#contactContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
     font-size: 55px;
+}
+
+h1:hover{
+    font-size: 58px;
 }
 
 nav{
@@ -26,5 +42,15 @@ button{
     border-radius: 10px;
     font-size: 23px;
     color: white;
-    background-color: darkgreen;
+    background-color: var(--bg-color);
+}
+
+button:hover{
+    background-color: var(--btn-hover);
+    color: lightgray;
+}
+
+button:active{
+    background-color: var(--btn-down);
+    color: gray;
 }
