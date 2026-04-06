@@ -7,34 +7,46 @@ info.textContent = "Contact us via sending stone, horse, telepathy, messenger pi
 
 const avaliableTimes = document.createElement("ul");
 const ashenhold = document.createElement("li");
-ashenhold.textContent = "Ashenhold: Midmorning to Evenfall";
 const moonday = document.createElement("li");
-moonday.textContent = "Moonday: First Light to Dusk";
 const towerday = document.createElement("li");
-towerday.textContent = "Towerday: First Light to Dusk";
 const wrymsday = document.createElement("li");
-wrymsday.textContent = "Wrymsday: First Light to Dusk";
 const lunara = document.createElement("li");
-lunara.textContent = "Lunara: First Light to Dusk";
 const spirefall = document.createElement("li");
-spirefall.textContent = "Spirefall: First Light to Dusk";
 const silverswake = document.createElement("li");
-silverswake.textContent = "Silverswake: Midmorning to Evenfall";
 const godsday = document.createElement("li");
-godsday.textContent = "Godsday: Closed";
-avaliableTimes.appendChild(ashenhold);
-avaliableTimes.appendChild(wrymsday);
-avaliableTimes.appendChild(towerday);
-avaliableTimes.appendChild(wrymsday);
-avaliableTimes.appendChild(lunara);
-avaliableTimes.appendChild(spirefall);
-avaliableTimes.appendChild(silverswake);
-avaliableTimes.appendChild(godsday);
+
+const specifyTimes = function(){
+    ashenhold.textContent = "Ashenhold: Midmorning to Evenfall";
+    moonday.textContent = "Moonday: First Light to Dusk";
+    towerday.textContent = "Towerday: First Light to Dusk";
+    wrymsday.textContent = "Wrymsday: First Light to Dusk";
+    lunara.textContent = "Lunara: First Light to Dusk";
+    spirefall.textContent = "Spirefall: First Light to Dusk";
+    silverswake.textContent = "Silverswake: Midmorning to Evenfall";
+    godsday.textContent = "Godsday: Closed";
+}
+
+const addDays = function(){
+    avaliableTimes.appendChild(ashenhold);
+    avaliableTimes.appendChild(wrymsday);
+    avaliableTimes.appendChild(towerday);
+    avaliableTimes.appendChild(wrymsday);
+    avaliableTimes.appendChild(lunara);
+    avaliableTimes.appendChild(spirefall);
+    avaliableTimes.appendChild(silverswake);
+    avaliableTimes.appendChild(godsday);
+}
 
 const holidayNote = document.createElement("h4");
 holidayNote.textContent = "Note we are closed for the following holidays: Day of Silver Tides, The Witching Bloom, Crownfall Eve, Storms Revel, First Dawn, and Frost Awakening.";
 
-contactContent.appendChild(title); 
-contactContent.appendChild(info);
-contactContent.appendChild(avaliableTimes);
-contactContent.appendChild(holidayNote);
+const addContent = function(){
+    contactContent.appendChild(title); 
+    contactContent.appendChild(info);
+    contactContent.appendChild(avaliableTimes);
+    contactContent.appendChild(holidayNote);
+}
+
+specifyTimes();
+addDays();
+addContent();

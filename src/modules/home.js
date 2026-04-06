@@ -12,7 +12,11 @@ const description = document.createElement("p");
 description.textContent = "Treat your taste to the widest array of pleasures within any land with rare scents upon this air. \
 Within this fine establishment lay sizzling meat from beasts far off lands and curious delicacies from places yet unknown.";
 
-homeContent.appendChild(title);
-homeContent.appendChild(starImage);
-homeContent.appendChild(headline);
-homeContent.appendChild(description);
+const addContent = function(){
+    homeContent.appendChild(title);
+    homeContent.appendChild(starImage);
+    homeContent.appendChild(headline);
+    homeContent.appendChild(description);
+}
+
+addContent();
