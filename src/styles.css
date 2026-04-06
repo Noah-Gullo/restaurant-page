@@ -39,6 +39,26 @@ h2{
     font-size: 40px;
 }
 
+h3{
+    font-size: 30px;
+}
+
+h4{
+    font-size: 20px;
+    margin: 20px;
+    align-self: flex-start;
+    font-weight: normal;
+}
+
+ul{
+    font-size: 25px;
+    margin: 20px;
+}
+
+li{
+    margin: 15px;
+}
+
 p{
     font-size: 23px;
     justify-self: flex-start;
