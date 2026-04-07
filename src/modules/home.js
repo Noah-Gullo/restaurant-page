@@ -5,6 +5,7 @@ homeContent.setAttribute("id", "homeContent");
 const title = document.createElement("h1");
 title.textContent = "Elvin Emporium";
 const starImage = document.createElement("img");
+starImage.setAttribute("alt", "Picture of a green star");
 starImage.src = star;
 const headline = document.createElement("h2");
 headline.textContent = "Welcome to the finest tavern!"
